@@ -1,0 +1,12 @@
+<h1>Routes</h1>
+
+<ul>
+  <li>
+    <a [routerLink]="home">Home</a>
+  </li>
+  <li *ngFor="let link of links">
+    <a [routerLink]="link.path">{{ link.text }}</a>
+  </li>
+</ul>
+
+<router-outlet></router-outlet>
